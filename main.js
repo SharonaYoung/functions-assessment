@@ -25,7 +25,7 @@ function findNum(...largestNumber) {
 //   console.log("i'm largeNum");
 //   let number = 0;
 //   const arr = [];
-//   for(i = 0; i < Array.length; i++){
+//   for(i = 0; i < arr.length; i++){
 //     if(arr[0] > number){
 //       number = arr[i];
 //     }
