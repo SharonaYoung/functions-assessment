@@ -5,13 +5,30 @@ const firstLetterName = (name) =>{
 firstLetterName("Sharona");
 
 // function divisibleByTwo
-const divisibleByTwo = (number) => {
- result = number % 2;
- console.log(result);
-} 
-divisibleByTwo(8);
+function divisibleByTwo(number) {
+  return number % 2 === 0;
+}
+console.log("6 is divisible by 2: " + divisibleByTwo(6));
 
 
+// function largest number 
+let largestNumber=[3,98,2,12];
 
+function findNum(...largestNumber) { 
 
-// function largestNum
+  return Math.max(...largestNumber);
+  }
+
+ console.log(findNum(...largestNumber));
+
+// const largeNum = () => {
+//   console.log("i'm largeNum");
+//   let number = 0;
+//   const arr = [];
+//   for(i = 0; i < Array.length; i++){
+//     if(arr[0] > number){
+//       number = arr[i];
+//     }
+//   }
+// }
+// largeNum();
