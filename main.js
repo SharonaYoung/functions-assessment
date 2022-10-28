@@ -12,23 +12,26 @@ console.log("6 is divisible by 2: " + divisibleByTwo(6));
 
 
 // function largest number 
-let largestNumber=[3,98,2,12];
+let largest = 0;
+const numbs = (arr) => {
+ 
+  for(i=0; i < arr.length; i++){
+  //  console.log(arr[i]); 
+   if(arr[i] > largest){
+    largest = arr[i];
+    }   
+  }
+  return largest;
+}
+console.log(numbs([300,7,67,49,86,2]));
 
-function findNum(...largestNumber) { 
+
+let largestNumber=[3,98,2,12,245];
+
+/*function findNum(...largestNumber) { 
 
   return Math.max(...largestNumber);
   }
 
- console.log(findNum(...largestNumber));
+ console.log(findNum(...largestNumber));*/
 
-// const largeNum = () => {
-//   console.log("i'm largeNum");
-//   let number = 0;
-//   const arr = [];
-//   for(i = 0; i < arr.length; i++){
-//     if(arr[0] > number){
-//       number = arr[i];
-//     }
-//   }
-// }
-// largeNum();
